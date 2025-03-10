@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Drugstore Malvinas</h1>
+        <p>¡Haz tu compra online, recíbelo en tu casa y paga con transferencia!</p>
+        <nav>
+            <button onclick="mostrarProductos('Comestibles')">Comestibles</button>
+            <button onclick="mostrarProductos('Bebidas')">Bebidas</button>
+            <button onclick="mostrarProductos('Lácteos')">Lácteos</button>
+            <button onclick="mostrarProductos('Fiambres')">Fiambres</button> 
+            <button onclick="mostrarProductos('Higiene del Hogar')">Higiene del Hogar</button> 
+            <button onclick="mostrarProductos('Cuidado Personal')">Cuidado Personal</button>
+            <button onclick="mostrarProductos('Mascotas')">Mascotas</button> 
+            <button onclick="mostrarProductos('Golosinas')">Golosinas</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos" class="productos"></section>
+
+        <aside class="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total">0</span> $</p>
+            <button onclick="comprar()">Comprar</button>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

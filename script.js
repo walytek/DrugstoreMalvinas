@@ -83,7 +83,7 @@ function actualizarCarrito() {
 }
 
 function comprar() {
-    const mensaje = `Hola, quiero comprar los siguientes productos:\n${carrito.map(item => `${item.nombre} - ${item.precio} $`).join('\n')}\nTotal: ${total} $`;
+    const mensaje = `Hola Anita, quiero comprar los siguientes productos:\n${carrito.map(item => `${item.nombre} - ${item.precio} $`).join('\n')}\nTotal: ${total} $`;
     const url = `https://wa.me/+543854788966?text=${encodeURIComponent(mensaje)}`; // Reemplaza 1234567890 con tu número de WhatsApp
     window.open(url, '_blank');
 }
